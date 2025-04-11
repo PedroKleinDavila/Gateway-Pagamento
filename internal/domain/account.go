@@ -10,7 +10,7 @@ import (
 )
 
 type Account struct {
-	ID        string
+	ID        string `gorm:"primaryKey"`
 	Name      string
 	Email     string
 	APIKey    string
